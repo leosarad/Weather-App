@@ -4,7 +4,6 @@ let path = require('path');
 
 let route = require('./routes.js');
 
-
 let app = new express();
 
 // Declaring Global App Variables

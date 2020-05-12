@@ -21,7 +21,7 @@
         <div class="content-wrapper">
             <div class="weather-content">
                 <div class="input-form">
-                    <form action="">
+                    <form class='form'>
                         <label for="location">Type your location to know weather</label>
                         <div>
                             <input type="text" name="location" id="location" placeholder="give data, take data">
@@ -32,13 +32,18 @@
 
                 <div class="fetched-data">
                     <div class="location">
-                        New York, USA
+                        
                     </div>
-                    <div class="weather">
-                        <span>Partly Cloudy</span>
-                        <span>Temp: 33</span>
-                        <span>Feels: 32</span>
+                    <div class="weather-data">
+                        <div><span>Weather</span><span class='weather'></span></div>
+                        <div><span>Temperature</span><span class='temperature'></span></div>
+                        <div><span>Pressure</span><span class='pressure'></span></div>
+                        <div><span>Wind</span><span class='wind'></span></div>
+                        <div><span>Humidity</span><span class='humidity'></span></div>
                     </div>
+                </div>
+                <div class="fetch-error">
+                    No Data fetched
                 </div>
             </div>
         </div>
@@ -49,4 +54,5 @@
 
     </div>
 </body>
+    <script src="js/script.js"></script>
 </html>

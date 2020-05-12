@@ -82,9 +82,21 @@ body{
     font-size: 1.3em;
     margin-bottom: 20px;
 }
-.fetched-data .weather{
+.fetched-data .weather-data{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: auto;
+}
+.fetched-data .weather-data div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:15px
+}
+.fetched-data .weather-data span{
+    text-align: center;
 }
 .about-content {
     height: 200px;
@@ -92,6 +104,13 @@ body{
 }
 .about-content div{
     margin: 8px;
+}
+
+.fetch-error{
+    text-align: center;
+}
+.fetched-data{
+    display: none;
 }
 
 .footernote{
