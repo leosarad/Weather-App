@@ -21,8 +21,12 @@ body{
     list-style-type: none;
     padding: 6px 20px;
 }
+.nav-menu ul li a{
+    text-decoration: none;
+    color: #ccc;
+}
 
-.nav-menu ul li:hover{
+.nav-menu ul li a:hover{
     cursor: pointer;
     color: #fff;
 }
@@ -48,6 +52,46 @@ body{
     font-size: 60px;
     color: #fff;
 
+}
+.input-form form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color:#999;
+}
+.input-form input[type=text]{
+    background-color: #222;
+    border: 0px solid #222;
+    padding: 8px;
+    color: #fff;
+}
+.input-form input[type=submit]{
+    background-color: #222;
+    border: 0px solid #222;
+    padding: 8px;
+    color: #fff;
+}
+.input-form div{
+    margin: 12px;
+}
+.fetched-data {
+    text-align: center;
+    margin-top: 20px;
+}
+.fetched-data .location{
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+.fetched-data .weather{
+    display: flex;
+    justify-content: space-around;
+}
+.about-content {
+    height: 200px;
+    overflow-Y: scroll;
+}
+.about-content div{
+    margin: 8px;
 }
 
 .footernote{

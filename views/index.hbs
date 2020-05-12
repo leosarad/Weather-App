@@ -13,13 +13,34 @@
         
         <div class="nav-menu">
             <ul>
-                <li>Home</li>
-                <li>About</li>
+                <li><a href="/">Home</a></li>
+                <li><a href="about">About</a></li>
             </ul>
         </div>
 
         <div class="content-wrapper">
+            <div class="weather-content">
+                <div class="input-form">
+                    <form action="">
+                        <label for="location">Type your location to know weather</label>
+                        <div>
+                            <input type="text" name="location" id="location" placeholder="give data, take data">
+                            <input type="submit" value="search">
+                        </div>
+                    </form>
+                </div>
 
+                <div class="fetched-data">
+                    <div class="location">
+                        New York, USA
+                    </div>
+                    <div class="weather">
+                        <span>Partly Cloudy</span>
+                        <span>Temp: 33</span>
+                        <span>Feels: 32</span>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="footernote">

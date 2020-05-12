@@ -1,6 +1,11 @@
 let start = (app)=>{
+    
     app.get('/',(req,res)=>{
         res.render('index',{"app":app.variables});
+    })
+
+    app.get('/about',(req,res)=>{
+        res.render('about',{"app":app.variables});
     })
 
     app.get('*',(req,res)=>{
