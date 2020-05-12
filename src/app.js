@@ -1,7 +1,8 @@
 let express = require('express');
-let route = require('./src/routes.js');
 let hbs = require('hbs');
 let path = require('path');
+
+let route = require('./routes.js');
 
 
 let app = new express();
@@ -9,7 +10,7 @@ let app = new express();
 // Declaring Global App Variables
 app.variables = {
     title : "Weather App",
-    publicDirectoryPath : path.join(__dirname,'./public'),
+    publicDirectoryPath : path.join(__dirname,'../public'),
     }
 
 // Set View Engiene
